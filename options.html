@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Options</title>
+    <style>
+      label { margin-left: 0px }
+    </style>
+  </head>
+  <body>
+    <h1>Auto Tab Killer</h1>
+    <form>
+      <p>
+        Start checking for inactive tabs when available system memory drops below this amount:<br>
+        <input type="number" style="width:50px;" id="kill_under_amount" />
+        <select id="kill_under_type">
+          <option value="%">%</option>
+          <option value="GB">GB</option>
+          <option value="MB">MB</option>
+        </select>
+      </p>
+      <p>
+        Check for inactive tabs every:<br>
+        <input type="number" style="width:50px;" id="kill_every_amount" />
+        <select id="kill_every_type">
+          <option value="seconds">Seconds</option>
+          <option value="minutes">Minutes</option>
+          <option value="hours">Hours</option>
+        </select>
+      </p>
+      <p>
+        Only kill tabs if they have been inactive for:<br>
+        <input type="number" style="width:50px;" id="kill_time_amount" />
+        <select id="kill_time_type">
+          <option value="seconds">Seconds</option>
+          <option value="minutes">Minutes</option>
+          <option value="hours">Hours</option>
+        </select>
+      </p>
+      <p><input type="submit" value="Save"></p>
+    </form>
+    <script src="options.js"></script>
+  </body>
+</html>
